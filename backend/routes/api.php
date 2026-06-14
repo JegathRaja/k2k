@@ -160,6 +160,7 @@ Route::prefix('v1')->middleware([\App\Http\Middleware\VisitorTrackingMiddleware:
             // All orders (operations view)
             Route::get('/orders',     [\App\Http\Controllers\Api\V1\Admin\OrderController::class, 'index']);
             Route::get('/orders/{id}', [\App\Http\Controllers\Api\V1\Admin\OrderController::class, 'show']);
+            Route::patch('/orders/{id}/status', [\App\Http\Controllers\Api\V1\Admin\OrderController::class, 'updateStatus']);
         });
     });
 });
