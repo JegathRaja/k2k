@@ -1,0 +1,62 @@
+# Root
+.env
+.env.local
+.env.staging
+.env.production
+*.env
+
+# Node
+node_modules/
+.next/
+out/
+dist/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.cache/
+.turbo/
+
+# PHP / Laravel
+vendor/
+backend/vendor/
+backend/.env
+backend/.env.staging
+backend/.env.production
+backend/storage/logs/
+backend/storage/framework/cache/
+backend/storage/framework/sessions/
+backend/storage/framework/views/
+backend/bootstrap/cache/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# IDE
+.idea/
+.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+.phpunit.result.cache
+.phpunit.cache/
+
+# OS
+.DS_Store
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Build artifacts
+*.log
+*.bak
+*.tmp
